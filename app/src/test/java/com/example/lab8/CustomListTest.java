@@ -5,12 +5,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 //import org.junit.Before;
+import androidx.appcompat.view.menu.MenuBuilder;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
 public class CustomListTest {
+
+    private MenuBuilder cities;
 
     /**
      * this gets size of the list
@@ -25,7 +29,7 @@ public class CustomListTest {
      empty * @param city
      */
     public void addCity(City city){
-        cities.add(city);
+        cities.add(city.toString());
     }
     private CustomList list;
     /**
